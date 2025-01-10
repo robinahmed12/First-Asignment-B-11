@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", serif;
+}
+
+
+/* global colors */
+
+:root {
+
+    /* text color */
+    --title-color: #0E0E0E;
+    ---sub-title-color: rgb(14, 14, 14, 0.80);
+    ---para-color: rgb(14, 14, 14, 0.70);
+    ---btn-text-color: #FFFFFF;
+
+
+    /* background color */
+    ---bg-1-color: #5490F5;
+    ---bg-2-color: #C6DBE4;
+    ---bg-3-color: #F7EBCF;
+    ---bg-4-color: #C6E4D6;
+    ---bg-5-color: #006A50;
+    ---bg-6-color: #ffffff;
+    ---bg-7-color: #F5F5F5;
+
+
+    /* button background color */
+    ---btn-1-color-: #5490F5;
+    ---btn-2-color-: #09A15C;
+    ---btn-3-color-: #FFC239;
+    ---btn-4-color-: #006A50;
+    ---btn-5-color-: #ffffff;
+}
+
+
+
+
+/* Reset styles */
+
+main {
+    margin: 80px 160px;
+}
+
+body {
+    background-color: var(---bg-7-color);
+}
+
+
+
+/***** header *****/
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 160px;
+    align-items: center;
+
+}
+
+nav .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin: 24px 0;
+}
+
+nav .nav-btn {
+   margin: 24px 0;
+   padding: 15px 30px;
+   color: #006A50;
+   font-size: 18px;
+   font-weight: 700;
+   background-color: #ffffff;
+   border-color: var(---btn-4-color-);
+}
+
+/***** End header *****/
+
+/***** hero *****/  
+
+.hero-section .hero-parent {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    background-color: var(---bg-4-color);
+    height: 60vh;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+.hero-parent .hero-content {
+    padding: 80px 100px;
+   
+}
+
+.hero-content .hero-sub-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: rgb(14, 14, 14, 0.50);
+}
+
+.hero-content .hero-title {
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--title-color);
+    
+}
+
+.hero-content .hero-btn {
+    padding: 17px 34px;
+    background-color: var(---bg-5-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-top: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-content .hero-btn:hover{
+    background-color: var(---btn-3-color-);
+    transition: 0.3s;
+    -webkit-transition:  0.5s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  
+}
+
+.hero-content .hero-img {
+    width: 474px;
+    height: 400px;
+}
+
+
+
+/***** End hero *****/
