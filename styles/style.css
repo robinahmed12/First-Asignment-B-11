@@ -84,7 +84,7 @@ body {
 .project-title {
     font-size: 20px;
     font-weight: bold;
-    color: var(---projec-title-color);
+    color: var(---project-title-color);
     margin-bottom: 16px;
 }
 
@@ -112,6 +112,7 @@ body {
     font-weight: 600;
     color: var(---bg-6-color);
     border: none;
+    background-color: var(---bg-5-color);
 }
 
 .vision-box-1 .primary-button {
@@ -271,7 +272,7 @@ nav .nav-btn {
    background-position-x: 40px;
    background-position-y: 48px;
    text-align: start;
-   
+
    
   
   
@@ -300,7 +301,71 @@ nav .nav-btn {
     line-height: 24px;
     color: var(---sub-title-color);
 }
-
-
   /***** End vision *****/
+
+
+  /***** news section *****/ 
+  .news-section .news-parent {
+    margin-top: 80px;
+  }
+
+
+  .news-parent .news-box {
+    display: flex;
+    gap: 32px;
+    padding: 48px;
+    border: 1px solid var(---bg-6-color);
+    background-color: #FFFFFF;
+    margin-top: 32px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+ .news-box .news-img img {
+    width: 408px;
+    height: 306px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+.news-box .news-content {
+    width: 744px;
+    height: 290px;
+    margin: 0 32px;
+}
+
+.news-content .news-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(---project-title-color); 
+    margin-bottom: 12px;
+}
+
+.news-content .newspaper-img {
+    width: 134px;
+    height: 40px;
+    margin-bottom: 12px;
+  
+}
+
+.news-time {
+    display: flex;
+    gap: 12px;
+    color: var(---sub-title-color);
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+   /***** End news section *****/
+  
 
