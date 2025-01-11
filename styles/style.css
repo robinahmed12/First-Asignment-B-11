@@ -17,12 +17,13 @@
     ---sub-title-color: rgba(14, 14, 14, 0.7);
     ---para-color: rgba(14, 14, 14, 0.7);
     ---btn-text-color: #FFFFFF;
+    ---project-title-color: rgba(14, 14, 14, 0.8);
 
 
     /* background color */
-    ---bg-1-color: #5490F5;
-    ---bg-2-color: #C6DBE4;
-    ---bg-3-color: #F7EBCF;
+    ---bg-1-color: rgba(84, 144, 245, 0.2);
+    ---bg-2-color: rgba(198, 228, 214, 1);
+    ---bg-3-color: rgba(247, 235, 207, 1);
     ---bg-4-color: #C6E4D6;
     ---bg-5-color: #006A50;
     ---bg-6-color: #ffffff;
@@ -42,15 +43,16 @@
 
 /* Reset styles */
 
-main {
-    margin: 80px 160px;
-      
+section {
+   max-width:  126%;
+   margin: 80px 160px;      
 }
 
 
 
 body {
     background-color: var(---bg-7-color);
+  
 }   
 
 
@@ -60,14 +62,69 @@ body {
     font-size: 40px;
     font-weight: bold;
     color: var(--title-color);
+    margin-bottom: 15px;
+
 }
 
 .sub-title {
     font-size: 16px;
     font-weight: 400;
     color: var(---sub-title-color);
+    margin-bottom: 24px;
 }
 
+
+.project-img {
+    width: 62px;
+    height: 62px;
+    color: var(---bg-6-color);
+    margin-bottom: 24px;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(---projec-title-color);
+    margin-bottom: 16px;
+}
+
+ .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(---para-color);
+    line-height: 24px;
+    margin-bottom: 28px;
+}
+
+.vision-box-2 .primary-button {
+    margin-top: 22px;
+}
+
+
+.primary-button {
+    padding: 11px 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(---bg-6-color);
+    border: none;
+}
+
+.vision-box-1 .primary-button {
+    background-color: var(---btn-1-color-);
+}
+
+.vision-box-2 .primary-button {
+    background-color: var(---btn-2-color-);
+}
+
+.vision-box-3 .primary-button {
+    background-color: var(---btn-3-color-);
+}
 
 
 /***** header *****/
@@ -99,7 +156,9 @@ nav .nav-btn {
 /***** End header *****/
 
 /***** hero *****/ 
-
+.hero-section {
+    
+}
 
  .hero-parent {
     display: flex;
@@ -113,10 +172,10 @@ nav .nav-btn {
     -moz-border-radius: 24px;
     -ms-border-radius: 24px;
     -o-border-radius: 24px;
-    height: 700px;
+    height: 560px;
     padding: 80px 100px;
-    max-height: 1280px;
-    margin: 0 160px;
+   
+    
 }
 
 
@@ -163,6 +222,85 @@ nav .nav-btn {
     height: 400px;
 }
 
-
-
 /***** End hero *****/
+
+
+/***** vision *****/
+
+.vision-section .vision-list {
+    display: flex;
+    gap: 24px;
+    margin: 32px 0 ;
+   
+}
+
+.vision-list .vision-box-1 {
+    padding: 32px;
+    width: 427px;
+    height: 325px;
+    background-color: var(---bg-1-color);
+}
+
+.vision-list .vision-box-2 {
+    padding: 32px;
+    width: 427px;
+    height: 325px;
+    background-color: var(---bg-2-color);
+}
+
+.vision-list .vision-box-3 {
+    padding: 32px;
+    width: 427px;
+    height: 325px;
+    background-color: var(---bg-3-color);
+}
+
+.vision-section .speech  {
+    height: 300px;
+    border: 1px solid var(---bg-6-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: var(---bg-6-color);
+    padding: 48px 15px;
+    background-image: url(../assets/quote-bg.png);
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+   background-position-x: 40px;
+   background-position-y: 48px;
+   text-align: start;
+   
+   
+  
+  
+}
+
+.speech .speech-detail{
+    margin: 24px 30px;
+}
+
+.speech-detail .description {
+    margin-bottom: 15px;
+}
+
+
+.speech-detail .name {
+    font-size: 24px;
+    font-weight: 600px;
+    line-height: 24px;
+    color: var(---project-title-color);
+    margin-bottom: 8px;
+}
+
+.speech-detail .sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(---sub-title-color);
+}
+
+
+  /***** End vision *****/
+
